@@ -1,0 +1,142 @@
+#screen
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #12092e;
+}
+
+#dotScreen
+{
+    z-index: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: clear;
+    pointer-events: none;
+}
+
+#header
+{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 20vh;
+}
+
+.borderCurve
+{
+    border-radius: 10px;
+}
+
+.text
+{
+    color: white;
+}
+
+.textFit
+{
+    white-space: nowrap;
+    font-size: clamp(3vw, calc(100cqi / 16),5vw);
+}
+
+.h1
+{
+    font-size: clamp(5vw, 150px, 10vw);
+}
+
+.marginLeft
+{
+    margin-left: clamp(5vw, 150px, 10vw);
+}
+
+.rainbow
+{
+}
+
+.noMarginV
+{
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
+#topText
+{
+    margin-top: 10vh;
+}
+
+#a
+{
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    
+    transition: background-color 2s ease 0s, rotate 2s ease 0s, height 2s ease 0s, width 2s ease 0s;
+}
+
+#a:hover
+{
+    background-color: coral;
+    rotate: 180deg;
+    width: 130px;
+    height: 130px;
+}
+
+
+@keyframes spin
+{
+    from 
+    {
+        rotate: 0deg;
+    }
+    to
+    {
+        rotate: 360deg;
+    }
+}
+
+.dot
+{
+    will-change: width;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.project
+{
+    container-type: inline-size;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 30vw;
+    background-color: white;
+    transition: height 0.5s ease 0s;
+}
+
+.project:hover
+{
+    height: 60vh;
+}
+
+@keyframes expand
+{
+    from
+    {
+        width: 0vw;
+    }
+    to
+    {
+        width: 28vw;
+    }
+}
